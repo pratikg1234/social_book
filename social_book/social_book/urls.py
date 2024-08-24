@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls'))
 ]
-# Specifying url of the media
+# Specifying url of the media folder inside core 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL,
                                    document_root=settings.MEDIA_ROOT) 
